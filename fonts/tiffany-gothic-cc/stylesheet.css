@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Tiffany Gothic CC';
+    src: url('TiffanyGothicCC.eot');
+    src: local('Tiffany Gothic CC'), local('TiffanyGothicCC'),
+        url('TiffanyGothicCC.eot?#iefix') format('embedded-opentype'),
+        url('TiffanyGothicCC.woff2') format('woff2'),
+        url('TiffanyGothicCC.woff') format('woff'),
+        url('TiffanyGothicCC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

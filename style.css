@@ -1,0 +1,277 @@
+
+@font-face {
+    font-family: 'Tiffany Gothic CC';
+    src: url('TiffanyGothicCC.eot');
+    src: local('Tiffany Gothic CC'), local('TiffanyGothicCC'),
+        url('/fonts/tiffany-gothic-cc/TiffanyGothicCC.eot') format('embedded-opentype'),
+        url('/fonts/tiffany-gothic-cc/TiffanyGothicCC.woff2') format('woff2'),
+        url('/fonts/tiffany-gothic-cc/TiffanyGothicCC.woff') format('woff'),
+        url('/fonts/tiffany-gothic-cc/TiffanyGothicCC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "L'Elf Noir du Mal";
+    src : url('./fonts/LELFNOIR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Tiffany Gothic CC', sans-serif;
+    width:100%;
+    /* padding:20px; */
+    color:white;
+    background-color: black;
+}
+
+header{
+    /* margin-top:0; */
+    height: 10%;
+    width:100%;
+    /* max-width: 400px; */
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:30px;
+    background-color: black;
+
+}
+
+.logo-container{
+    display:flex;
+    flex-direction: row-reverse;
+    height:5rem;
+    width:30%;
+    justify-content:flex-end;
+    gap:10px;
+    /* margin-bottom:50px; */
+}
+
+.logo-container h1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    /* height:50px; */
+    /* justify-content:center; */
+}
+
+.logo-container .juegos-style{
+    font-size:1.5rem;
+}
+.logo-container .sombras-style {
+    font-family:"L'Elf Noir du Mal", sans-serif;
+    margin-top:0;
+    padding-top:0;
+    font-size:3rem;
+}
+
+.main-logo {
+    width:5rem;
+    max-width:200px;
+    border-radius:10px;
+}
+
+.socials {
+    width:20%;
+    /* max-width:150px; */
+    display:flex;
+    gap:10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socials p {
+    display:flex;
+    margin-bottom:0;
+    margin-right:10px;
+}
+
+.socials a img{
+    width:35px;
+    max-width:50px;
+}
+
+.main-video{
+    width:100%;
+    height:auto;
+    max-height:70vh;
+}
+
+nav {
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background-color:rgba(137, 22, 22, 0.316); */
+}
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+}
+
+nav ul a {
+    margin: 0 15px;
+    text-decoration:none;
+    color:white;
+}
+
+main {
+    margin-bottom:20px;
+    padding:10px;
+
+}
+
+.articles-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.articles {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width:1300px;
+    box-sizing:border-box;
+    gap:20px;
+}
+
+.articles article img {
+    width:100%;
+    height:90%;
+    max-width:800px;
+    border-radius:10px;
+}
+
+.swiper-container {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    margin-bottom:20px;
+    overflow: hidden;
+}
+
+.swiper-container h2 {
+    margin-bottom:20px;
+}
+
+.swiper-wrapper {
+    display:flex;
+    width:100%;
+    height:100%;
+    gap:20px;
+    padding:20px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 60%; 
+    height: 100%;
+    max-height: 500px;
+}
+
+.swiper-slide img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:10px;
+}
+
+.faq-container {
+    width:100%;
+    padding:20px;
+    display:flex;
+    /* grid-template-columns: 1fr 1fr; */
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; /*evita que se empuje*/
+    gap:20px;
+}
+
+.faq-container h2 {
+    grid-column:span 2;
+}
+
+.faq-container .btn {
+    width:100%;
+    background-color: black;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+    cursor:pointer;
+    gap:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.faq-container .btn:hover {
+    background-color:rgba(0, 0, 139, 0.35);
+}
+
+.faq-container .btn p{
+    margin:0;  /*margen predeterminado*/
+}
+
+.faq-container .btn .rotate{
+    transform:rotate(180deg);
+    transition:transform 0.3 ease;
+}
+
+.faq-container .content{
+    text-align: center;
+    opacity:0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+}
+
+.faq-container .content.active{
+    opacity:1;
+    max-height: 500px;
+    transition: max-height 0.4s ease;
+}
+
+.maps-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.maps-container p {
+    background-color: rgba(0, 0, 0, 0.295);
+    padding:20px;
+    border-radius:10px;
+}
+
+.maps-container .maps{
+    border-radius:10px;
+}
+
+footer{
+    background-color: black;
+    margin-top:20px;
+}
+.footer-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container .terms-container{
+    display:flex;
+    gap:20px;
+}
+header, nav {
+    position:fixed;
+    z-index: 1000;
+}
