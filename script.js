@@ -9,14 +9,22 @@ window.addEventListener('load', function() {
     });
 
     
-    const btns = document.querySelectorAll(".btn");
-    const contents = document.querySelectorAll(".content");
-    const arrows = document.querySelectorAll(".arrow");
-    
-        btns.forEach((btn, index) => {
-        btn.addEventListener("click", () => {
-            contents[index].classList.toggle("active");
-            arrows[index].classList.toggle("rotate");
+    document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            content.classList.toggle('active');
+            
+            // Rotar el ícono
+            const icon = button.querySelector('.arrow');
+            icon.classList.toggle('rotate');
         });
     });
+
+    // const mainVideo = this.document.querySelector('.main-video');
+    // const thumbnail = this.document.querySelector('.video-thumbnail');
+    // thumbnail.addEventListener('click', () => {
+    //     thumbnail.style.display = 'none';
+    //     mainVideo.play();
+    // })
+    
 })
